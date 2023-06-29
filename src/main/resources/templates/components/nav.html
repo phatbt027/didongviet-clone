@@ -1,0 +1,43 @@
+<nav th:fragment="header">
+	<div class="logo-icon">
+		<a href="#"><img
+			src="../../../static/assets/images/logo/logowhite.svg"
+			th:src="@{assets/images/logo/logowhite.svg}" alt="Logo" /></a>
+	</div>
+	<div class="nav-menu">
+		<div class="search-bar">
+			<div class="search-bar-items">
+				<input type="search" placeholder="Bạn muốn tìm gì..." />
+			</div>
+			<div class="search-box-keyword">
+				<a class="keyword-hot" href="#">IPhone 14</a> <a class="keyword-hot"
+					href="#">Xiaomi Redmi Note 12</a> <a class="keyword-hot" href="#">Apple
+					Watch 8</a> <a class="keyword-hot" href="#">Oppo Find N2 Flip</a>
+			</div>
+		</div>
+
+		<div class="phone-contact">
+			<a href="#">Hotline hỗ trợ <br> <b>1800 6018</b>
+			</a>
+		</div>
+
+		<div class="slash">
+			&nbsp; <br> &nbsp;
+		</div>
+
+		<div class="auth">
+			<a href="#">Đăng Nhập /&nbsp;</a><a href="#">Đăng ký <br> <b>Thành
+					viên</b></a>
+		</div>
+
+		<div class="slash">
+			&nbsp; <br> &nbsp;
+		</div>
+
+		<div class="cart">
+			<a href="#"><img
+				src="../../../static/assets/images/logo/cart.svg"
+				th:src="@{assets/images/logo/cart.svg}" alt="cart" /></a>
+		</div>
+	</div>
+</nav>

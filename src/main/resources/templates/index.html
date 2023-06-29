@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html
+        lang="en"
+        xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" th:href="@{assets/css/general.css}"/>
+    <link rel="stylesheet" th:href="@{assets/css/store/nav.css}"/>
+    <link rel="stylesheet" th:href="@{assets/css/store/home.css}"/>
+</head>
+<body>
+    <header th:replace="~{components/nav.html :: header}"></header>
+    <div class="appendix">
+	    <div class="appendix-left">
+	    	<a href="#">Điện Thoại</a>
+	    	<a href="#">Apple (AAR)</a>
+	    	<a href="#">Mac &amp; Tablet</a>
+	    	<a href="#">Âm thanh</a>
+	    	<a href="#">Phụ kiện</a>
+	    	<a href="#">Máy cũ giá rẻ</a>
+	    </div>
+	    <div class="appendix-right">
+	    	<a href="#">Trả góp</a>
+	    	<a href="#">Thu cũ <br> đổi mới</a>
+	    	<a href="#">Công nghệ <br> 24h</a>
+	    	<a href="#">Khuyến mãi <br> tháng 04</a>
+	    </div>
+    </div>
+</body>
+</html>

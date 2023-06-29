@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html
+        lang="en"
+        xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng nhập</title>
+    <link th:href="@{assets/css/manager/login.css}"  rel="stylesheet" />
+    <link th:href="@{assets/css/general.css}"  rel="stylesheet" />
+</head>
+<body>
+    <div class="login-panel">
+    	<div class="logo">
+    		<img th:src="@{assets/images/logo/logowhite.svg}" alt="logo" />
+    	</div>
+    	
+    	<h2 class="title">Xin Chào</h2>
+    
+        <div class="login-form">
+        	<form th:action="@{/login}" method="POST">
+	        	<div class="login-form-row">
+	        		<input name="username" class="login-form-input" type="text" placeholder="Tên đăng nhập"/>
+	        	</div>
+	        	
+	        	<div class="login-form-row">
+	        		<input name="password" class="login-form-input" type="password" placeholder="Mật khẩu"/>
+	        		<label class="login-form-remember">
+		        		<input class="login-form-checkbox" type="checkbox"/>
+		        		<span>Lưu mật khẩu?</span>
+	        		</label>
+	        	</div>
+	        	
+	        	<div class="login-form-row">
+	        		<button class="login-form-button" type="submit">Đăng Nhập</button>
+	        	</div>
+	        	
+				<div class="login-form-row">
+	        		<a href="#">Quên mật khẩu?</a>
+	        		<a href="#">Liên hệ phòng IT Support!</a>
+	        	</div>
+        	</form>
+        </div>
+    </div>
+</body>
+
+</html>

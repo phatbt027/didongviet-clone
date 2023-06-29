@@ -1,0 +1,46 @@
+.appendix {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: #dddddd solid 2px;
+	box-shadow: 0 0 3px #a3a3a3;
+	height: 52px;
+}
+
+.appendix-left {
+	margin-left: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.appendix-left a {
+	text-decoration: none;
+	color: black;
+	margin-right: 10px;
+	font-size: 11px;
+}
+
+.appendix-right {
+	margin-right: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.appendix-right a {
+	background-color: white;
+	border: gray solid 1px;
+	margin-right: 8px;
+	border-radius: 4px;
+	font-size: 11px;
+	padding: 4px 10px 4px 10px;
+	cursor: pointer;
+	text-decoration: none;
+	color: black;
+	text-align: center;
+}
+
+.appendix-right a:last-child {
+	background-color: #be1e2d;
+	color: white;
+}
